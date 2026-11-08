@@ -20,6 +20,17 @@
         background-color:rgb(33, 33, 54);
     }
 
+    .slide-gfall  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-skywheel  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-hyperverse  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-spinningcoaster  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-skyring  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-tanjora  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-spacegun  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-garudaglide  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-missioninterstellar  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+    .slide-equinox  { background: darkslategray; text-align: center; padding-top: 50px; font-size:1.8rem; color: white; }
+
     .fact-file {
        background-color:white;
                 color: black;
@@ -42,7 +53,7 @@
         top: 8px;
         left: 8px;
         color: white;
-        padding:4px 8px;
+        padding: 4px 8px;
     }
 
     .hotel-box{
@@ -82,9 +93,10 @@
     </style>
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#amusementparkNav" data-offset="60">
 
         <div class="top-bar">
+            <img src="https://www.wonderla.com/images/wonderla-logo.webp?w=2000&q=75" width="200" height="80">
             <button class="btn text-dark">My Account </button>
             <button class="btn btn-warning text-primary">Book Tickets</button>
             <button class="btn btn-primary text-warning">⇶</button>
@@ -111,37 +123,45 @@
                  <p>Kids <span class="badge badge-primary">44 Rides</span></p>
             
                  
-                 <h6>G Fall,Hyderabad</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Sky Wheel,Chennai</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Hyperverse,Hyderabad</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Spinning Coaster,Bhubaneswar</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Sky Ring,Kochi</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Tanjora,Chennai</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Space Gun,Kochi</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Garuda Glide,Bengaluru</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Mission Interstellar,Bengaluru</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-                 <h6>Equinox,Bhubaneswar</h6>
-                    <button class="btn btn-warning text-primary">Ride Details</button>
-
-                    <p></p>
+                 <div id="amusementCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#amusementCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#amusementCarousel" data-slide-to="1"></li>
+                <li data-target="#amusementCarousel" data-slide-to="2"></li>
+                <li data-target="#amusementCarousel" data-slide-to="3"></li>
+                <li data-target="#amusementCarousel" data-slide-to="4"></li>
+                <li data-target="#amusementCarousel" data-slide-to="5"></li>
+                <li data-target="#amusementCarousel" data-slide-to="6"></li>
+                <li data-target="#amusementCarousel" data-slide-to="7"></li>
+                <li data-target="#amusementCarousel" data-slide-to="8"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active amusement park-slide slide-gfall"><img src="https://d22pimhl2qmbj7.cloudfront.net/public/G_Fall_Hero_fa7b08057b.jpg" width="200" height="300"><p></p>G Fall,Hyderabad</div>
+                <div class="carousel-item amusement park-slide slide-skywheel"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4O3IuqexxR6Iz6nm8C6C3Iv_IaQPQv5-eXDMPGe6Ahr9otCXTTZSYDk8c&s=10" width="180" height="300"><p></p> Sky Wheel,Chennai</div>
+                <div class="carousel-item amusement park-slide slide-hyperverse"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYNkCCC03713utAo3G_nh_J1PTPb1Kql7_Sgvtv0SuvO3IdoLwpFbRFYx_&s=10" width="200" height="300"><p></p> Hyperverse,Hyderabad</div>
+                <div class="carousel-item amusement park-slide slide-skyring"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvmVCvTgpGfF7ThMZmuRf7FEidk2r63svO0urdBpBKgQ&s=10" width="200" height="300"><p></p> Sky Ring,Kochi</div>
+                <div class="carousel-item amusement park-slide slide-tanjora"><img src="https://th-i.thgim.com/public/incoming/gt40qp/article70344937.ece/alternates/FREE_1200/Wonderla%20Chennai%20%203.jpg" width="400" height="300"><p></p> Tanjora,Chennai</div>
+                <div class="carousel-item amusement park-slide slide-spacegun"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu6I9ckVHAj7e0WqyQCws8LT7RddewFMe2h_SuV9MqtIRuQQYixKNXTtMm&s=10" width="200" height="300"><p></p> Space Gun,Kochi</div>
+                <div class="carousel-item amusement park-slide slide-garudaglide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAM1ifV9u5C-E_9Cu_b6DIdBDkh9Bgl-p97l-GHUuW-B5tiBAeG827JD0A&s=10" width="200" height="300"><p></p> Garuda Glide,Bengaluru</div>
+                <div class="carousel-item amusement park-slide slide-missioninterstellar"><img src="https://media.licdn.com/dms/image/v2/D5605AQEdmW4nI3vSpA/videocover-high/B56ZX7NhTmGUBs-/0/1743676431464?e=2147483647&v=beta&t=C61Ddmspx_0W6J2jQQd0Trm2LLMYfwn8lkvB3CM8ToE" width="200" height="300"><p></p> Mission Interstellar,Bengaluru</div>
+                <div class="carousel-item amusement park-slide slide-equinox"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAof4WP4pawyjZp6dqDkuVfPourQTMOlTNDRLEj-uWgy6w5INOwEqmWnM&s=10" width="200" height="300"><p></p> Equinox,Bhubaneswar</div>
+            </div>
+            <a class="carousel-control-prev" href="#amusementCarousel" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#amusementCarousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+            </div>
+                
+            <p></p>
 
                 <button class="btn btn-warning text-primary">Explore All Rides!</button>
             </div>
 
                 <div class="container-fluid bg-light p-4">
                     <h2>Jaw-Dropping Offers!</h2>
-                    <h5 class="text-success">This Festive Let Majaa Win Upto 40% Off*</h5>
-                    <h5 class="text-danger">FunTasticFourBuy 3 Get 1 Free*</h5>
-                    <h5 class="text-info">Free Ticket On Your Birthday Month</h5>
+                    <button><img src="https://d22pimhl2qmbj7.cloudfront.net/public/780_x_464_9aa943e84d.webp?w=2000&q=75" width="300" height="200"></button>
+                    <button><img src="https://d22pimhl2qmbj7.cloudfront.net/public/WB_654x440_368ca0a087.webp" width="300" height="200"></button>
+                    <button><img src="https://d22pimhl2qmbj7.cloudfront.net/public/780_464_1_ffc306d113.webp?w=2000&q=75" width="300" height="200"></button>
+
+                    <p></p>
 
                     <button class="btn btn-primary text-warning">Explore All Offers</button>
                 </div>
@@ -151,17 +171,19 @@
                 <h1 class="section-title text-warning">Stay.Relax.Repeat.</h1>
                 <p>Extend your trip with our premium resort stays.</p>
 
-                <button class="btn btn-warning text-primary" style="font-size: 35px">Terrea <span class="badge badge-danger" style="font-size: 15px">New</span>→<p class="text-dark">Earth inspired urban resort</p></button>
-                
-                <p></p>
+                <button><img src="https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiOTRmYzY5ZjRhNjAxMmIzOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAyZGM1ZDQwMzM2ODowMDA2NWZiYzU4MjQ5MmRmEAIYASIKaW1hZ2UvanBlZw==" width="500" height="300"> <span class="badge badge-danger" style="font-size: 15px">New</span><p class="text-danger">Earth inspired urban resort</p></button>
 
-                <button class="btn btn-warning text-primary" style="font-size: 35px">Isle →<p class="text-dark">Island inspired escape</p></button>
+                <p></p>
+                
+                <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStzE7YcQzitkVTS2wrSYdKehZ0DRQbHN0yM7EB1lkgNjAlYZGxUSBxT0Q&s=10" width="500" height="400"><p class="text-dark">Island inspired escape</p></button>
                 </div>
 
+            
                 <div class="container-fluid bg-warning p-4">
                 <h2 class="section-title text-dark">Restaurants</h2>
 
                 <div class="fact-file">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThJqnoSTIGvafksfZYKmt6RipVT2SITSgq3gS9RSGrhqs46j064dy4Mqg&s=10" width="280">
                 <h3>Park View Restaurant</h3>
                 <h6 class="text-primary">Bengaluru</h6> <h6 class="text-primary">Non-Veg</h6>
                 <p class="text-dark">Kickstart your day right with our delicious breakfast options at Park View Restaurant! From fluffy idlis, Crispy dosas to hearty omelettes, we offer a mouthwatering selection to satisfy every craving. Enjoy your meal in our cozy atmosphere with a beautiful view of the park, making your breakfast experience truly delightful. Join us and fuel up for a fantastic day ahead!</p>
@@ -169,6 +191,7 @@
                 </div>
 
                 <div class="fact-file">
+                    <img src="https://d22pimhl2qmbj7.cloudfront.net/public/Galaxy_Restaurant_2_d1a32ba3ea.webp?w=2000&q=62" width="280">
                 <h3>Galaxy AC Restaurant</h3>
                 <h6 class="text-primary">Kochi</h6> <h6 class="text-primary">Non-Veg</h6>
                 <p class="text-dark">Unlimited Buffet with 20+ dishes served in the convenience of a Galaxy themed Air-conditioned restaurant. Dive into an immersive Galactic dining experience at Galaxy, our signature space themed Buffet restaurant serving a wide variety of vegetarian & non vegetarian delicacies in an air-conditioned setting with premium service</p>
@@ -176,9 +199,10 @@
                 </div>
 
                 <div class="fact-file">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDT5vOHyLzVJCpI-_cAkigXgM-gu_KFmWAwgeVNfm4E02w7lOUcRR8u2Y&s=10" width="280">
                 <h3>Biriyani Zone Restaurant</h3>
                 <h6 class="text-primary">Hyderabad</h6>  <h6 class="text-primary">Non-Veg</h6>
-                <p class="text-dark">Indulge in a culinary adventure at Waves Restaurant, where every meal is a celebration of flavor and variety! Situated by the mesmerizing wave pool, our dining experience offers an array of tempting options to suit every palate. Enjoy aromatic Biryani or flavors from the Chinese Wok, while enjoying the tranquil ambiance of our poolside setting. Join us at Waves Restaurant for an unforgettable dining experience that will leave you craving for more!</p>
+                <p class="text-dark">Located above the food court, Biryani zone is an Air conditioned Restaurant dedicated for Biryani Lovers. Indulge in mouth watering varieties of Biryani prepared by our home grown Chefs</p>
                 <button class="btn btn-primary text-warning">Explore Menu</button>
                 </div>
 
@@ -238,5 +262,7 @@
                 <h6 class="text-light">Facilities & Amenities</h6>
                 <button class="btn btn-warning text-primary">Explore Guidelines</button>
 
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
 </html>
